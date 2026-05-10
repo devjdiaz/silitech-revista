@@ -3,44 +3,64 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="min-h-screen bg-amber-50 text-stone-800">
-      <nav className="sticky top-0 z-20 border-b border-green-700 bg-white text-stone-800 backdrop-blur">
-        <div className="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-4 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-          <div className="flex items-center justify-between gap-4">
-            <div className="flex items-center gap-3">
+      <nav className="sticky top-0 z-20 border-b border-green-700 bg-[linear-gradient(120deg,#ffffff_0%,#dcfce7_28%,#22c55e_62%,#15803d_100%)] text-stone-800 shadow-[0_10px_28px_rgba(21,128,61,0.24),inset_0_1px_0_rgba(255,255,255,0.85)] backdrop-blur">
+        <div className="group/nav mx-auto grid max-w-7xl gap-4 px-4 py-4 lg:grid-cols-[1fr_auto_1fr] lg:items-center lg:px-8">
+          <div className="order-2 flex flex-wrap justify-center gap-2 text-sm font-bold text-stone-800 lg:order-1 lg:justify-end">
+            <a
+              className="relative isolate overflow-hidden rounded-full px-4 py-2 transition duration-300 before:absolute before:inset-y-0 before:left-1/2 before:-z-10 before:w-full before:-translate-x-1/2 before:scale-x-0 before:rounded-full before:bg-green-700 before:transition-transform before:duration-300 hover:z-10 hover:scale-110 hover:text-white hover:before:scale-x-100 group-has-[a:hover]/nav:opacity-35 hover:!opacity-100"
+              href="#"
+            >
+              Inicio
+            </a>
+            <a
+              className="relative isolate overflow-hidden rounded-full px-4 py-2 transition duration-300 before:absolute before:inset-y-0 before:left-1/2 before:-z-10 before:w-full before:-translate-x-1/2 before:scale-x-0 before:rounded-full before:bg-green-600 before:transition-transform before:duration-300 hover:z-10 hover:scale-110 hover:text-white hover:before:scale-x-100 group-has-[a:hover]/nav:opacity-35 hover:!opacity-100"
+              href="#"
+            >
+              Ediciones
+            </a>
+          </div>
+
+          <div className="order-1 flex items-center justify-between gap-4 lg:order-2 lg:justify-center">
+            <div className="flex items-center gap-3 text-left">
               <Image
                 src="/images/logo-silitech-sa-transparent.png"
                 alt="Silitech S.A."
-                width={160}
-                height={67}
-                className="h-11 w-auto"
+                width={190}
+                height={79}
+                className="h-14 w-auto"
                 priority
               />
               <div>
-                <p className="text-base font-black">Silitech Magazine</p>
-                <p className="text-xs text-amber-800">
+                <p className="font-serif text-xl font-black leading-none tracking-[0.16em]">
+                  Magazine
+                </p>
+                <p className="font-serif text-sm italic text-green-700">
                   Confianza que da buenos frutos
                 </p>
               </div>
             </div>
-            <div className="rounded-full border border-green-700 px-3 py-1 text-xs text-green-700 sm:hidden">
+            <div className="rounded-full border border-green-700 bg-white px-3 py-1 text-xs font-bold text-green-700 shadow-[inset_0_1px_0_rgba(255,255,255,0.95),0_2px_5px_rgba(21,128,61,0.18)] sm:hidden">
               No. 24
             </div>
           </div>
 
-          <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm font-medium text-stone-800">
-            <a className="transition hover:text-green-700" href="#">
-              Inicio
-            </a>
-            <a className="transition hover:text-green-700" href="#">
-              Ediciones
-            </a>
-            <a className="transition hover:text-green-700" href="#">
+          <div className="order-3 flex flex-wrap justify-center gap-2 text-sm font-bold text-stone-800 lg:justify-start">
+            <a
+              className="relative isolate overflow-hidden rounded-full px-4 py-2 transition duration-300 before:absolute before:inset-y-0 before:left-1/2 before:-z-10 before:w-full before:-translate-x-1/2 before:scale-x-0 before:rounded-full before:bg-green-700 before:transition-transform before:duration-300 hover:z-10 hover:scale-110 hover:text-white hover:before:scale-x-100 group-has-[a:hover]/nav:opacity-35 hover:!opacity-100"
+              href="#"
+            >
               Cultivos
             </a>
-            <a className="transition hover:text-green-700" href="#">
+            <a
+              className="relative isolate overflow-hidden rounded-full px-4 py-2 transition duration-300 before:absolute before:inset-y-0 before:left-1/2 before:-z-10 before:w-full before:-translate-x-1/2 before:scale-x-0 before:rounded-full before:bg-green-600 before:transition-transform before:duration-300 hover:z-10 hover:scale-110 hover:text-white hover:before:scale-x-100 group-has-[a:hover]/nav:opacity-35 hover:!opacity-100"
+              href="#"
+            >
               Casos de Éxito
             </a>
-            <a className="transition hover:text-green-700" href="#">
+            <a
+              className="relative isolate overflow-hidden rounded-full px-4 py-2 transition duration-300 before:absolute before:inset-y-0 before:left-1/2 before:-z-10 before:w-full before:-translate-x-1/2 before:scale-x-0 before:rounded-full before:bg-green-700 before:transition-transform before:duration-300 hover:z-10 hover:scale-110 hover:text-white hover:before:scale-x-100 group-has-[a:hover]/nav:opacity-35 hover:!opacity-100"
+              href="#"
+            >
               Nosotros
             </a>
           </div>
